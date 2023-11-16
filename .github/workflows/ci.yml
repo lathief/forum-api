@@ -23,6 +23,8 @@
           run: |
             npm install
             npm run migrate up
+            npm run migrate up -d {{{ secrets.PGDBURL_TEST }}}
+            npm run lint:fix
             npm run test
           env:
             CI: true
