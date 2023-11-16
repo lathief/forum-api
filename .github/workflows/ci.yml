@@ -23,6 +23,8 @@
           run: |
             npm install
             npm run migrate up
+            npm run migrate up -d {{{ secrets.PGDB_URL }}}
+            npm run lint:fix
             npm run test
           env:
             CI: true
