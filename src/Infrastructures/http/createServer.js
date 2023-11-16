@@ -20,7 +20,7 @@ const createServer = async (container) => {
     method: 'GET',
     path: '/',
     handler: () => ({
-      value: 'Welcome to Forum Dicoding',
+      value: 'Welcome to Forum Dicoding, Semoga Betah',
     }),
   });
   await server.register([
